@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../bower_components/angular/angular.js"></script>
+    <script src="../bower_components/ng-webworker/src/ng-webworker.js"></script>
+
+    <script src="../dist/index.js"></script>
+
+<!--    <script>
+
+        angular.module('kino', ['ngWebworker'])
+                .controller('DemoCtrl', function ($scope, Webworker) {
+
+                    var vm = this;
+
+                    vm.asyncDosomething = function () {
+
+
+                        function doubler(num) {
+                            debugger;
+                            // the return value becomes the resolve of the promise
+                            return num * 2;
+                        }
+
+                        var myWorker = Webworker.create(doubler);
+
+                        myWorker.run(3234234).then(function(result) {
+                            console.log("Answer: " + result);
+                            vm.result = result;
+                        });
+                    }
+                })
+    </script>-->
+</head>
+<body ng-controller="DemoCtrl as demo" ng-app="kino">
+<button ng-click="demo.asyncDosomething()">dosomething</button>
+{{demo.result}}
+</body>
+</html>
