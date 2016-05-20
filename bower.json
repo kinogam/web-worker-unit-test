@@ -1,0 +1,33 @@
+{
+  "name": "web-worker-test",
+  "version": "0.0.1",
+  "description": "easy to test angular validator",
+  "main": "dist/ng-rules.js",
+  "authors": [
+    "kinogam"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "angular",
+    "validator"
+  ],
+  "homepage": "https://github.com/kinogam/ng-rules",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "gulp",
+    "example",
+    "gulpfile.js",
+    "karma.config.js"
+  ],
+  "dependencies": {
+    "angular": "~1.2.28",
+    "ng-webworker": "^0.2.3",
+    "lodash-compat": "~3.10.1"
+  },
+  "devDependencies": {
+    "angular-mocks": "~1.2.28"
+  }
+}
